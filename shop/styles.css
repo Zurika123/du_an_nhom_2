@@ -519,6 +519,9 @@ hr {
   .navpic {
     visibility: hidden;
   }
+  .btnmes {
+    padding: 15px 30px;
+  }
 }
 
 @keyframes wobble-hor-top {
