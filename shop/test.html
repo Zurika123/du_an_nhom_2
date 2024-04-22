@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP BÁN ACC Free Fire.COM</title>
+    <link rel="stylesheet" href="thongtin.css" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <style>
+    html {
+      scroll-padding-top: 65px;
+    }
+  </style>
+  <body>
+    <div id="test2Content"></div>
+    <section style="display: block; margin: auto; width: 90%;margin-top: 10px;">
+        <div style="display: flex;width: 100%;">
+          <div class="navtt">
+            <p>THÔNG TIN</p>
+            <ul style="list-style-type: none;">
+              <li><a onclick="toggleElement('litttk')" id="ttk">THÔNG TIN TÀI KHOẢN </a></li>
+            </ul>
+            <p>LỊCH SỬ</p>
+            <ul style="list-style-type: none;">
+              <li><a onclick="toggleElement('lilsnt')" id="lsnt">LỊCH SỬ NẠP TIỀN</a></li>
+              <li><a onclick="toggleElement('lilsacc')" id="lsacc">TÀI KHOẢN ĐÃ MUA </a></li>
+              <li><a onclick="toggleElement('lilsvp')" id="lsvp">VẬT PHẨM ĐÃ NHẬN</a></li>
+            </ul>
+            <p>DỊCH VỤ</p>
+            <ul style="list-style-type: none;">
+              <li><a onclick="toggleElement('lirvp')" id="rvp">RÚT VẬT PHẨM</a></li>
+              <li><a onclick="toggleElement('lidct')" id="dct">ĐƠN CÀY THUÊ</a></li>
+            </ul>
+          </div>
+  
+          <div class="navttht">
+            <div style="display: flex;width: 100%;flex-wrap: wrap;" id="litttk" class="litttk">
+                    <table border="0" style="background-color: white;flex: 25%">
+                        <tr>
+                            <td style="width: 100px;"><p>Tài khoản</p></td>
+                            <td>:</td>
+                            <td style="width: 200px;" colspan="2"><span id="tentk2"></span></td>
+                            <tr>
+                            </tr>
+                            <td><p>Mật khẩu</p></td>
+                            <td>:</td>
+                            <td style="width: 200px;"><span id="mktk"></span></td>                        
+                            <td><button style="width: 50px; height: 30px;" id="hienanpassword" onclick="hienanpassword()">Hiện</button></td>
+                            </tr></tr>
+                            <td><p>Quân huy</p></td>
+                            <td>:</td>
+                            <td  colspan="2"><span id="quanhuytk"></span></td>
+                            </tr></tr>
+                            <td><p>Xu</p></td>
+                            <td>:</td>
+                            <td colspan="2"><span id="tientk2"></span></td></td>
+                            </tr></tr>
+                            <td><p>Số vật phẩm</p></td>
+                            <td>:</td>
+                            <td colspan="2"><span id="sosanphamtk"></span></td>
+                            </tr></tr>
+                            <td><p>Số tài khoản</p></td>
+                            <td>:</td>
+                            <td colspan="2"><span id="sotaikhoan"></span></td>
+                            </tr>
+                    </table>            
+                <div class="thaydoimk"
+                      style="display: block;justify-content: center;flex:50%;background-color: rgb(230, 230, 230);text-align: center;">
+                      <div>
+                        <h2>Đổi mật khẩu</h2>
+                        <input type="password" id="pass1" minlength="8" maxlength="20" required style="max-width:50%;" autocomplete="off" placeholder="password">
+                      </div>
+                      <div>
+                        <input type="password" id="pass2" minlength="8" maxlength="20" required style="max-width:50%;" autocomplete="off" placeholder="Nhập lại password">
+                      </div>
+                      <input type="text" style="max-width: 80px;margin-top: 10px;" id="mxn" autocomplete="off" placeholder="Nhập mxn">
+                      <span id="verificationCode" style="border: 1px solid black;max-width: 80px;margin: 5px;display: none;font-size: 12px;padding: 2px 5px;"></span>
+                      <button onclick="generateVerificationCode()">Tạo Mã Xác Nhận</button> <br>                
+                      
+                      <button onclick="resetpass()" style="width: 200px;height: 30px;margin-bottom: 10px;">Đổi mật khẩu</button>
+                </div>
+            </div>
+              <div style="display: flex; width: 100%;background-color: white" id="lilsnt" class="lilsnt">
+                <div style="display: block; overflow-y: auto;height: 325px;">
+                  <div style="margin-left: 15px;"><p id="listlsnt"></p></div>
+                </div> 
+              </div> 
+              <div style="display: flex; width: 100%;background-color: white" id="lilsacc" class="lilsacc">
+                <div style="display: block; overflow-y: auto;flex: 100%;height: 325px;">
+                  <div style="margin-left: 15px;"><p id="listlsacc"></p></div>
+                </div> 
+              </div> 
+              <div style="display: flex; width: auto;background-color: white" id="lilsvp" class="lilsvp">
+                <div style="display: block; overflow-y: auto;height: 325px;">
+                  <div style="margin-left: 15px;"><p id="listlsvp"></p></div>
+                </div> 
+              </div>     
+              <div style="display: flex;width: 100%;background-color: white;flex-wrap: wrap;" id="lirvp" class="lirvp">
+                <div style="display: block;padding: 5px 15px;flex: 25%;text-align: center;">
+                  <h1>Danh sách vật phẩm :</h1>
+                  <fieldset style="width: 200px;overflow-y: auto;height: 240px;display: block;margin: auto;">
+                    <p id="sanphamtk" style="font-size: 13px;"></p>
+                </fieldset>
+                </div>
+                <div style="flex: 50%;text-align: center;" class="classrvp">              
+                  <form onsubmit="return rutVPForm()">
+                      <h2 style="text-align: center;">Rút vật phẩm</h2>
+                      <p for="">Nhập ID Nhân Vật </p>
+                      <input
+                          style="max-width: 50%;"
+                          type="text"
+                          maxlength="6"
+                          pattern="[0-9]{6}"
+                          title="Điền ID 6 số"
+                          placeholder="ID 6 số"
+                          id="IDGAME"
+                          required/>
+                      <p for="">Nhập tên vật phẩm</p>                
+                          <input style="max-width: 50%;" type="text" title="Vui lòng điền tên vật phẩm" required id="rutvatpham" autocomplete="off">
+                      <p style="font-size: 12px;"> lưu ý :(copy tên vật phẩm bên bảng danh sách vật phẩm để chính xác nhất ,vật phẩm tên giống nhau thì sẽ rút vật phẩm có trước)</p>     
+                      <button style="display: block;margin: auto ;cursor: pointer;padding: 10px 20px;margin-bottom: 10px;" type="submit">Rút</button>
+                  </form>
+              </div>      
+              </div>
+              <div style="display: flex; justify-content: center;width: 100%; background-color: white; height: 100%;flex-wrap: wrap;" id="lidct" class="lidct">
+                <table border="1" style="flex: 25%;border: 1px solid black;">         
+                  <tr>
+                      <td colspan="4" style="height: 10%;text-align: center;"><h2>Thông tin liên hệ</h2></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" style="height: 70%;">
+                      <h3 style="display: flex;align-items: center;justify-content: center;font-size: 1rem;">Chưa có nhân viên</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td style="height: 20%;width: 30%;">
+                    <img src="zalo.png" alt="Nút Zalo" style="width: 300px; cursor: pointer;" onclick="window.location.href='https://zalo.me/0916009435'" ></td>                  
+                    <td></td>
+                  </tr>
+              </table>
+                <div style="flex: 50%;">
+                  <h1 style="text-align: center;">Lưu ý</h1>
+                    <div style="margin-left: 5px;margin-right: 5px;">
+                      <p></p>- Uy tín phải đạt từ 85 trở lên
+                      <p>- ACC có tướng và Ngọc</p>
+                      <p>- Trong quá trình thuê cày, không được đổi mật khẩu nick, hãy bảo mật thông tin nick và không được
+                          cung cấp thông tin nick cho bên thứ 3</p>
+                      <p>- Nick đăng nhập bằng FB, thì vui lòng liên kết với garena trước khi thuê cày. Và điền tài khoản, mật
+                          khẩu garena để thuê nha các bạn</p></div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      </section>
+    <script>
+       function loadTest2Content() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("test2Content").innerHTML += this.responseText;
+          }
+        };
+        xhttp.open("GET", "header.html", true);
+        xhttp.send();
+      }
+      loadTest2Content();
+      //setTimeout(function(){location.reload();}, 100)
+      
+     // setInterval(loadTest2Content, 150);
+    </script>
+    <script src="script.js"></script>
+    <script src="thongtin.js"></script>
+    <script src="thongtintk.js"></script>
+     
+  </body>
+</html>
