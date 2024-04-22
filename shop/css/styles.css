@@ -124,6 +124,10 @@ input:hover {
   color: rgb(255, 0, 0);
 }
 
+#navdalogin{
+  display: none;
+}
+
 .frist-ul {
   margin-left: 5px;
   height: 80px;
