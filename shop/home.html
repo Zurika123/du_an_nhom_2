@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOPACCGAME.COM</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      html {
+        scroll-padding-top: 65px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- thông báo -->
+    <div class="overlaytb">
+      <div class="modal">
+        <span class="close" onclick="closetb()" style="text-align: right"
+          >&times;</span
+        >
+        <div style="font-size: 24px; color: red; display: flex">
+          <img src="image/chuongtb.jfif" alt="" width="20px" /><b
+            style="margin-left: 5px"
+            >THÔNG BÁO</b
+          >
+        </div>
+        <p style="text-align: center; color: red">
+          Sự kiện Tân SHOPACCGAME :<a
+            onclick="window.alert('Sự kiện đã kết thúc')"
+            style="color: blue; margin-left: 5px"
+            >XEM TẠI ĐÂY</a
+          >
+        </p>
+        <p style="text-align: center; color: red">
+          Cày thuê siêu cấp tốc:<a
+            href="thongtin.html#dct"
+            style="color: blue; margin-left: 5px"
+            >TẠI ĐÂY</a
+          >
+        </p>
+        <p style="text-align: center">
+          Trung tâm hỗ trợ:<a
+            href="https://www.facebook.com/profile.php?id=100024320834679&mibextid=JRoKGi"
+            style="color: blue; margin-left: 5px"
+            >TẠI ĐÂY</a
+          >
+        </p>
+        <button
+          onclick="closetb()"
+          style="display: block; margin: auto"
+          class="button"
+        >
+          Tắt Thông Báo
+        </button>
+      </div>
+    </div>
+    <div id="header"></div>
+    <section style="display: flex">
+      <!--leftaside-->
+      <div class="divleftaside">
+        <aside class="leftaside" id="leftaside">
+          <button id="btnNav" onclick="btnNav()"><</button>
+          <div>
+            <nav id="quickView" style="transition: left 0.5s; position: fixed">
+              <ul style="list-style-type: none">
+                <b>Xem nhanh</b>
+                <li><a href="#nicklq">Nick Liên Quân</a></li>
+                <li><a href="#thuvanmay">Thử vận may</a></li>
+                <li style="display: none"><a href="#shop"></a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+      <!-- main -->
+      <main class="content" style="color: black">
+        <h1 class="section" id="nicklq">NICK LIÊN QUÂN</h1>
+        <hr />
+        <div class="frame">
+          <img src="image/saleHN.gif" alt="Hình ảnh 1" />
+          <h2 class="uppercase-text">SĂN NGAY SALE</h2>
+          <p>70% ACC CÓ THÔNG TIN</p>
+          <p>30% ACC TRẮNG THÔNG TIN</p>
+          <p>Giá: 100.000 VND</p>
+          <button><a href="Xemchitiet.html">XEM CHi TIẾT</a></button>
+        </div>
+        <div class="frame">
+          <img src="image/NLQ.gif" alt="Hình ảnh 2" />
+          <h2>NICK LIÊN QUÂN</h2>
+          <p>SỐ ACC ĐÃ BÁN 3975</p>
+          <p>ACC THÔNG TIN ĐỔI ĐƯỢC</p>
+          <p>ACC TRẮNG THÔNG TIN</p>
+          <button><a href="XNLQ.html">XEM CHi TIẾT</a></button>
+        </div>
+        <div class="frame">
+          <img src="image/NLQV.gif" alt="Hình ảnh 3" />
+          <h2>NICK LIÊN QUÂN VIP</h2>
+          <p>SỐ ACC ĐÃ BÁN 3975</p>
+          <p>ACC THÔNG TIN ĐỔI ĐƯỢC</p>
+          <p>ACC TRẮNG THÔNG TIN</p>
+          <button><a href="XLNQV.html">XEM CHi TIẾT</a></button>
+        </div>
+        <h1 class="section" id="thuvanmay">THỬ VẬN MAY LIÊN QUÂN</h1>
+        <hr />
+        <div class="frame">
+          <img src="image/TVMSKIN.gif" alt="Hình ảnh 4" />
+          <h2>THỬ VẬN QUÂN HUY</h2>
+          <p>SĂN QUÂN HUY CỰC ĐÃ</p>
+          <p>LƯỢT THAM GIA 3,476</p>
+          <p>Giá: 50.000 VND</p>
+          <button><a href="vongquayqh.html">Săn ngay</a></button>
+        </div>
+        <div class="frame">
+          <img src="image/TVM100k.gif" alt="Hình ảnh 5" />
+          <h2>THỬ VẬN MAY 100K</h2>
+          <p>LƯỢT THAM GIA 3,476</p>
+          <p>CƠ HỘI NHẬN 999 QH</p>
+          <p>CƠ HỘI NHẬN THẺ GAME TRỊ GIÁ 100k</p>
+          <button>COMING SOON</button>
+        </div>
+        <div class="frame">
+          <img src="image/TVMSKIN.gif" alt="Hình ảnh 6" />
+          <h2>THỬ VẬN MAY SKIN</h2>
+          <p>SĂN SKIN SSS CỰC HOT</p>
+          <p>LƯỢT THAM GIA 3,476</p>
+          <p>Giá: 50.000 VND</p>
+          <button>COMING SOON</button>
+        </div>
+      </main>
+      <!--rightaside-->
+      <div class="divrightaside">
+        <aside id="rightaside" class="rightaside" style="width: 100%">
+          <h4>Thông tin nhóm 2 (NSX):</h4>
+          <button
+            style="
+              font-size: 1em;
+              padding: 2px;
+              max-width: 80%;
+              display: block;
+              margin: auto;
+              margin-bottom: 3px;
+              cursor: pointer;
+            "
+            onclick="window.location.href = 'gioithieu.html'"
+          >
+            Xem giới thiệu
+          </button>
+          <button
+            onclick="updatebalance(1000)"
+            style="
+              font-size: 1em;
+              padding: 2px;
+              max-width: 80%;
+              display: block;
+              margin: auto;
+              cursor: pointer;
+            "
+            id="trocap"
+          >
+            Thiết lập +1000 Xu
+          </button>
+        </aside>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="js/header&footer.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/thongtintk.js"></script>
+    <script src="js/effNav.js"></script>
+    <script>
+      /* kiểm tra những tk đã lưu và xóa 
+      for (var i = 0; i <= localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var value = localStorage.getItem(key);
+        alert("KEY: " + key + "VALUE: " + value);
+        // Kiểm tra nếu key là "#ADMIN"
+        if (key === "#ADMIN") {
+          // Không cần thực hiện bất kỳ hành động nào
+          // Nếu bạn muốn thêm một hành động cụ thể ở đây, hãy thêm vào sau dòng này
+        } else {
+          // Lấy giá trị userInfoJSON từ localStorage
+          var userInfoJSON = localStorage.getItem(key);
+          // Xóa thông tin người dùng với username không phải "#ADMIN"
+          localStorage.removeItem(key);
+          // Kiểm tra và xóa loggedInUser nếu có
+          var loggedInUser = localStorage.getItem("loggedInUser");
+          if (loggedInUser !== null && loggedInUser !== "#ADMIN") {
+            localStorage.removeItem("loggedInUser");
+          }
+          alert("Tài khoản " + key + " đã được xóa.");
+        }
+      }*/
+      /*Kiểm tra thông tin người dùng bằng console
+      var check = "#ADMIN";
+      var nguoiDungInfo = getUserInfo(check);
+      // Kiểm tra xem liệu người dùng có tồn tại không
+      if (nguoiDungInfo !== null) {
+        // Nếu tồn tại, bạn có thể sử dụng thông tin của họ ở đây
+        console.log("Thông tin của người dùng ", check, ": ", nguoiDungInfo);
+      } else {
+        // Nếu không tồn tại, có thể hiển thị một thông báo hoặc thực hiện hành động khác tùy thuộc vào trường hợp
+        console.log("Người dùng Topflo16 không tồn tại.");
+      }*/
+    </script>
+  </body>
+</html>
