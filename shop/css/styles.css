@@ -380,7 +380,7 @@ hr {
 .btnmes {
   cursor: pointer;
   margin-left: 50px;
-  background-image: url("/image/mes.jpg");
+  background-image: url("/shop/image/mes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px 80px;
