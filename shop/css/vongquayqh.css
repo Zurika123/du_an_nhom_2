@@ -1,7 +1,7 @@
 .spinner {
   display: block;
   margin: auto;
-  background-image: url("/vongQuay.jpg");
+  background-image: url("/du_an_nhom_2/shop/image/vongQuay.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: red;
@@ -34,7 +34,7 @@
 .needle:before {
   width: 100px;
   height: 100px;
-  background-image: url("/Muiten.png");
+  background-image: url("/du_an_nhom_2/shop/image/Muiten.png");
   background-size: contain; /* Đảm bảo rằng hình ảnh nền sẽ cover toàn bộ khu vực của pseudo-element */
   overflow: hidden;
   background-position: center;
