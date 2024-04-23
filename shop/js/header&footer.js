@@ -25,6 +25,17 @@ setTimeout(function () {
   loadHeader();
 }, 50);
 
+//bật tắt navthogtin
+var navtt1 = document.querySelector(".navthongtin1");
+var navtt2 = document.querySelector(".navthongtin2");
+function tonglenavtt(num){
+  if(num == 0){
+    navtt2.style.display = "none";
+  }else{
+    navtt1.style.display = "none";
+  }
+}
+
 //Bật tắt ảnh logo
 function toggleImageLogo() {
   var imagelogo = document.querySelector(".imagelogo");
