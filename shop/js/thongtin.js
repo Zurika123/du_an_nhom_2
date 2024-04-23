@@ -238,21 +238,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var elementId = hash.substring(1); // Bỏ qua ký tự '#'
     if (elementId) {
       if (
-        elementId != "lsnt" ||
-        elementId != "lsacc" ||
-        elementId != "lsvp" ||
-        elementId != "rvp" ||
-        elementId != "dct"
+        elementId == "lsnt" ||
+        elementId == "lsacc" ||
+        elementId == "lsvp" ||
+        elementId == "rvp" ||
+        elementId == "dct"
       ) {
-        document.getElementById("ttk").click();
-        setTimeout(function () {
-          document.getElementById("shop").scrollIntoView();
-        }, 600);
+        navlink(elementId);
       } else {
-        document.getElementById(elementId).click();
-        setTimeout(function () {
-          document.getElementById("shop").scrollIntoView();
-        }, 600);
+        navlink("ttk");
       }
     }
   } else {
@@ -263,6 +257,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 function navlink(id) {
-  document.getElementById(id).click();
-  document.getElementById("shop").scrollIntoView();
+  setTimeout(function () {
+    document.getElementById(id).click();
+    document.getElementById("shop").scrollIntoView();
+  }, 250);
 }
