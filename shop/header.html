@@ -1,0 +1,299 @@
+<!--header-->
+<header>
+  <nav id="navbar">
+    <ul class="frist-ul" id="frist-ul">
+      <div class="navlogo">
+        <img src="image/logo.png" alt="" width="85%" height="85%" />
+      </div>
+    </ul>
+    <ul style="list-style-type: none">
+      <li><a href="#home.html" onclick="trangchu()">TRANG CHỦ</a></li>
+      <li><a href="thongtin.html">THÔNG TIN</a></li>
+      <li><a onclick="naptien()">NẠP TIỀN</a></li>
+    </ul>
+    <ul>
+      <li>
+        <div class="overlaythongtin">
+          <div class="modal" style="width: 150px">
+            <div class="navthogtin1">
+              <a href="thongtin.html" style="cursor: pointer"
+                >Quản lý tài khoản</a
+              >
+              <p style="color: red">Lịch sử</p>
+              <a href="thongtin.html#lsnt" style="cursor: pointer"
+                >Lịch sử nạp tiền</a
+              >
+              <br />
+              <a href="thongtin.html#lsacc" style="cursor: pointer"
+                >Mua tài khoản</a
+              >
+              <br />
+              <a href="thongtin.html#lsvp" style="cursor: pointer">Vật phẩm</a>
+              <p style="color: red">Dịch vụ</p>
+              <a href="thongtin.html#dct" style="cursor: pointer"
+                >Đơn cày thuê</a
+              >
+              <br />
+              <a
+                href="https://www.facebook.com/profile.php?id=100024320834679&mibextid=JRoKGi"
+                style="cursor: pointer"
+                >Hỗ trợ khách hàng</a
+              >
+              <p style="color: red">Khác</p>
+              <a href="thongtin.html#rvp" style="cursor: pointer"
+                >Rút vật phẩm</a
+              >
+              <br />
+              <a href="#" style="cursor: pointer" onclick="dangxuat()"
+                >Đăng xuất</a
+              >
+            </div>
+            <div class="navthogtin2">
+              <a onclick="navlink('ttk')" style="cursor: pointer"
+                >Quản lý tài khoản</a
+              >
+              <p style="color: red">Lịch sử</p>
+              <a onclick="navlink('lsnt')" style="cursor: pointer"
+                >Lịch sử nạp tiền</a
+              >
+              <br />
+              <a onclick="navlink('lsacc')" style="cursor: pointer"
+                >Mua tài khoản</a
+              >
+              <br />
+              <a onclick="navlink('lsvp')" style="cursor: pointer">Vật phẩm</a>
+              <p style="color: red">Dịch vụ</p>
+              <a onclick="navlink('dct')" style="cursor: pointer"
+                >Đơn cày thuê</a
+              >
+              <br />
+              <a
+                href="https://www.facebook.com/profile.php?id=100024320834679&mibextid=JRoKGi"
+                style="cursor: pointer"
+                >Hỗ trợ khách hàng</a
+              >
+              <p style="color: red">Khác</p>
+              <a onclick="navlink('rvp')" style="cursor: pointer"
+                >Rút vật phẩm</a
+              >
+              <br />
+              <a href="#" style="cursor: pointer" onclick="dangxuat()"
+                >Đăng xuất</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="navpic chuadangnhap">
+        <img
+          src="image/logokh.png"
+          alt=""
+          id="navpic"
+          width="45px"
+          style="cursor: pointer"
+          onclick="dangnhap()"
+        />
+      </li>
+      <li>
+        <a onclick="dangnhap()" id="navlogin" class="chuadangnhap">ĐĂNG NHẬP</a>
+      </li>
+      <li><a onclick="dangky()" id="navdk" class="chuadangnhap">ĐĂNG KÝ</a></li>
+
+      <li>
+        <table
+          onclick="navthongtin()"
+          class="thongtintk"
+          id="navdalogin"
+          style="
+            display: flex;
+            width: 150px;
+            height: 45px;
+            color: black;
+            cursor: pointer;
+          "
+        >
+          <tr>
+            <td rowspan="2">
+              <img src="image/logodalogin.jpeg" alt="" width="40px" />
+            </td>
+            <td id="tentk" style="font-size: 12px"></td>
+            <td>
+              <span>▼</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 14px; width: 110px" colspan="2">
+              Xu:
+              <span id="tientk" style="color: red"></span>
+            </td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+  </nav>
+  <img src="image/anhlogo.png" alt="" class="imagelogo" />
+</header>
+<div
+  style="display: flex; justify-content: center"
+  class="section"
+  id="shop"
+  onmouseover="startAnimation()"
+>
+  <div class="logo">
+    <img src="image/logo.png" alt="" width="85%" />
+  </div>
+</div>
+<!-- Thông tin -->
+<!-- nạp tiền -->
+<div class="overlaycard">
+  <div class="modal">
+    <span class="close" style="text-align: right" onclick="closeCard()"
+      >&times;</span
+    >
+    <div style="font-size: 24px; color: red; display: flex">
+      <b style="margin-left: 5px">Nạp card</b>
+    </div>
+    <form onsubmit="return cardForm()" id="cardFrom">
+      <div>
+        <input
+          type="text"
+          id="maThe"
+          placeholder="Mã thẻ"
+          pattern="[0-9]{15}"
+          title="Vui lòng nhập 15 số."
+          autocomplete="off"
+          required
+        />
+      </div>
+      <input
+        type="text"
+        id="Seri"
+        placeholder="Số Seri"
+        pattern="[0-9]{13}"
+        title="Vui lòng nhập 13 số."
+        autocomplete="off"
+        required
+      />
+      <button
+        type="submit"
+        onclick=""
+        style="display: block; margin: auto"
+        class="buttonlogin"
+      >
+        Nạp Ngay
+      </button>
+    </form>
+  </div>
+</div>
+<!-- đăng nhập -->
+<div class="overlaylogin">
+  <div class="modal">
+    <span class="close" style="text-align: right" onclick="closeLogin()"
+      >&times;</span
+    >
+    <div style="font-size: 24px; color: red; display: flex">
+      <b style="margin-left: 5px" id="title">LOGIN</b>
+    </div>
+    <form onsubmit="return loginForm()" id="loginform">
+      <div>
+        <input
+          type="text"
+          id="username_login"
+          placeholder="Tên đăng nhập"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          id="password"
+          minlength="8"
+          maxlength="20"
+          title="Mật khẩu cần chứa từ 8 đến 20 ký tự."
+          placeholder="Mật khẩu (Mật khẩu cần ít nhất 8 ký tự)"
+          required
+        />
+      </div>
+      <button
+        type="submit"
+        style="display: block; margin: auto"
+        class="buttonlogin"
+      >
+        Đăng nhập
+      </button>
+    </form>
+    <button
+      onclick="chuyentrang()"
+      style="display: block; margin: auto"
+      class="buttonloginsigin"
+      id="loginsigin"
+    >
+      Đăng ký tài khoản
+    </button>
+  </div>
+</div>
+<!-- đăng ký -->
+<div class="overlaysigin">
+  <div class="modal">
+    <span class="close" style="text-align: right" onclick="closeSigin()"
+      >&times;</span
+    >
+    <div style="font-size: 24px; color: red; display: flex">
+      <b style="margin-left: 5px" id="title">SIGIN</b>
+    </div>
+    <form onsubmit="return siginForm()" id="registerform">
+      <div>
+        <input
+          type="text"
+          id="username_register"
+          pattern="^[^#]+$"
+          maxlength="20"
+          title="Tên đăng ký không được chứa ký tự #"
+          placeholder="Tên đăng ký"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          id="password1"
+          minlength="8"
+          maxlength="20"
+          title="Mật khẩu cần chứa từ 8 đến 20 ký tự."
+          placeholder="Mật khẩu (Mật khẩu cần ít nhất 8 ký tự)"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          id="password2"
+          minlength="8"
+          maxlength="20"
+          title="Mật khẩu cần chứa từ 8 đến 20 ký tự."
+          placeholder="Nhập lại mật khẩu"
+          required
+        />
+      </div>
+      <button
+        type="submit"
+        onclick=""
+        style="display: block; margin: auto"
+        class="buttonlogin"
+      >
+        Đăng ký
+      </button>
+    </form>
+    <button
+      onclick="chuyentrang()"
+      style="display: block; margin: auto"
+      class="buttonloginsigin"
+      id="loginsigin"
+    >
+      Đăng nhập tài khoản
+    </button>
+  </div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/thongtintk.js"></script>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>LIÊN QUÂN VIP</title>
+    <style>
+      .poster {
+        border: 1px solid #000;
+        width: 23.75%;
+        height: auto;
+        margin-left: 1%;
+        margin-top: 2%;
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+      }
+      @media (max-width: 1020px) {
+        .poster {
+          width: 37%;
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 600px) {
+        .poster {
+          width: 48%;
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--header-->
+    <div id="header"></div>
+    <!-- content -->
+    <h2 style="text-align: center; margin-top: 40px">
+      ACC LIÊN QUÂN VIP CỰC CHẤT
+    </h2>
+    <hr />
+    <div class="poster">
+      <img src="image/NLQV1.jpg" alt="Game Cover" />
+      <h2>ACC LIÊN QUÂN</h2>
+      <p>ACC TRẮNG THÔNG TIN</p>
+      <p>Giá: 8.000.000 VND</p>
+      <button>XEM CHI TIẾT</button>
+      <button
+        onclick='updateACC("ACC VIP PRO"," tk: sp.vipro123 mk: 123321",8000)'
+      >
+        MUA ACC
+      </button>
+    </div>
+
+    <div class="poster">
+      <img src="image/NLQV2.jpg" alt="Game Cover" />
+      <h2>ACC LIÊN QUÂN</h2>
+      <p>ACC TRẮNG THÔNG TIN</p>
+      <p>Giá: 10.000.000 VND</p>
+      <button>XEM CHI TIẾT</button>
+      <button
+        onclick='updateACC("ACC VIP PRO"," tk: sp.vippr123 mk: 123321",10000)'
+      >
+        MUA ACC
+      </button>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="js/header&footer.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/thongtintk.js"></script>
+  </body>
+</html>
