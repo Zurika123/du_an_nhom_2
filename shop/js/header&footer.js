@@ -29,10 +29,10 @@ setTimeout(function () {
 var navtt1 = document.querySelector(".navthongtin1");
 var navtt2 = document.querySelector(".navthongtin2");
 function tonglenavtt(num){
-  if(num == 0){
-    navtt2.style.display = "none";
-  }else{
+  if(num == 1){
     navtt1.style.display = "none";
+  }else{
+    navtt2.style.display = "none";
   }
 }
 
